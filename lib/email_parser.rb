@@ -7,11 +7,8 @@ class EmailParser
   end
   
   def parse
-    csv_emails.split.collect do |address|
-      address.split(" , ")
+    csv_emails.split(/\s*,\s*/)
     end
-    .flatten.uniq 
-  end
 end
 
 email_addresses = "john@doe.com, person@somewhere.org"
