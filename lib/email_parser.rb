@@ -8,7 +8,7 @@ class EmailParser
   
   def parse
     csv_emails.split(/\s*,\s*/)
-    end
+  end
 end
 
 email_addresses = "john@doe.com, person@somewhere.org"
