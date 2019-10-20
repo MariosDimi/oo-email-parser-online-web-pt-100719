@@ -9,6 +9,8 @@ class EmailParser
   def parse
     csv_emails.split(/\s*,\s*/)
   end
+  .flatten.uniq 
+  end
 end
 
 email_addresses = "john@doe.com, person@somewhere.org"
